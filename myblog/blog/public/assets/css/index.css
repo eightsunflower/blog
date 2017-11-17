@@ -1,0 +1,296 @@
+   /* 网页中基本样式初始化 start */
+
+   body,
+   div,
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   h6,
+   ul,
+   ol,
+   li,
+   dl,
+   dt,
+   dd,
+   table,
+   p,
+   a,
+   image {
+       margin: 0;
+       padding: 0;
+   }
+
+   ul,
+   ol,
+   li {
+       list-style: none;
+   }
+
+   a {
+       text-decoration: none;
+   }
+   /* 网页中基本样式初始化 end */
+   /*  头部  开始*/
+
+   .header {
+       position: relative;
+       height: 100vh;
+       width: 100%;
+       background: url(../images/header.jpg) center center;
+       margin-bottom: 2rem;
+       text-align: center;
+   }
+
+   .header .headerOne {
+       /*width: 100%;*/
+       height: 70px;
+       /*background-color: yellow;*/
+       margin: 0 0 100px 0;
+       padding: 35px 40px;
+   }
+
+   .header .headerOne .header-nav {
+       float: left;
+   }
+
+   .header .headerOne .header-nav>img {
+       width: 38px;
+   }
+
+   .header .headerOne .header-login {
+       float: right;
+       height: 38px;
+       width: 78px;
+       text-align: center;
+       line-height: 38px;
+       font-size: 12px;
+       color: #fff;
+       border-radius: 5px;
+       border: 1px solid rgba(255, 255, 255, .6);
+   }
+
+   .header .headerOne .header-login .iconfont {
+       font-size: 10px;
+   }
+
+   .header .headerTwo {
+       height: 100px;
+       width: 100%;
+       /*background-color: pink;*/
+   }
+
+   .header .headerTwo .header-title {
+       font-size: 48px;
+       color: #fff;
+       font-weight: 500;
+       margin: 10px 0 10px 0;
+       /*text-indent: -3px;*/
+   }
+
+   .header .headerTwo .header-list {
+       margin: 0 0 5px 0;
+       height: 30px;
+       line-height: 30px;
+       font-size: 20px;
+       color: #fff;
+   }
+
+   .header .icon-zhankai {
+       position: absolute;
+       bottom: 45px;
+       left: 50%;
+       margin-left: -16px;
+       font-size: 34px;
+       color: rgba(255, 255, 255, .7);
+   }
+   /*  头部  结束*/
+   /*  分类  开始*/
+
+   .fenlei {
+       width: 697px;
+       margin: 0 auto;
+   }
+   /*  分类  结束*/
+   /*   文章  开始*/
+
+   .fenlei span a {
+       color: #333;
+   }
+
+   .container {
+       width: 100%;
+       /*height: 2000px;*/
+       /*background-color: yellow;*/
+   }
+
+   .container .post {
+       position: relative;
+       margin: 2rem auto;
+       padding-bottom: 48px;
+       /*background-color: orange;*/
+       width: 697px;
+       max-width: 710px;
+       /*height: 293px;*/
+       border-bottom: 1px solid #ebf2f6;
+   }
+
+   .container .post .article .art-title {
+       height: 72px;
+       margin-bottom: 8px;
+       line-height: 36px;
+       font-size: 30px;
+   }
+
+   .container .post .article .art-title>a {
+       color: #4a4a4a;
+   }
+
+   .container .post .article .art-list {
+       font-size: 1em;
+       line-height: 1.7em;
+   }
+
+   .container .post .article .art-list .iconfont {
+       font-size: 0.9em;
+       color: #4a4a4a;
+   }
+
+   .container .post .article .footer {
+       width: 697px;
+       /*height: 27px;*/
+       /*background-color: pink;*/
+       margin: 21px 0 0 0;
+       line-height: 2.2rem;
+       color: #9eabb3;
+       font-size: 0;
+       /*font-size: 1.5rem;*/
+       /*vertical-align: center;*/
+   }
+
+   .container .post .article .footer img {
+       width: 24px;
+       /*float: left;*/
+       margin-right: 9px;
+       vertical-align: middle;
+   }
+
+   .container .post .article .footer a {
+       height: 20px;
+       color: #9eabb3;
+       vertical-align: middle;
+       font-size: 15px;
+   }
+
+   .container .post .article .footer a::after {
+       content: "|";
+       color: #9eabb3;
+       margin-left: 8px;
+       margin-right: 8px;
+   }
+
+   .container .post .article .footer time {
+       vertical-align: middle;
+       font-size: 15px;
+   }
+
+   .container .pager {
+       position: relative;
+       width: 697px;
+       /*background-color: blue;*/
+       font-size: 16px;
+       color: #9EABB3;
+       text-align: center;
+       margin: 4rem auto;
+       max-width: 710px;
+   }
+
+   .container .pager .page-num {
+       display: inline-block;
+       padding: 2px 0;
+       min-width: 100px;
+       height: 35px;
+       line-height: 35px;
+       font-size: 13px;
+       /*vertical-align: middle;*/
+   }
+
+   .container .pager .page-prev {
+       display: inline-block;
+       position: absolute;
+       left: 0;
+       height: 33px;
+       line-height: 33px;
+       font-size: 13px;
+       color: #9EABB3;
+       border: #bfc8cd 1px solid;
+       border-radius: 4px;
+       padding: 0 15px;
+       /*vertical-align: middle;*/
+   }
+
+   .container .pager .page-next {
+       display: inline-block;
+       position: absolute;
+       right: 0;
+       height: 33px;
+       line-height: 33px;
+       font-size: 13px;
+       color: #9EABB3;
+       border: #bfc8cd 1px solid;
+       border-radius: 4px;
+       padding: 0 15px;
+       /*vertical-align: middle;*/
+   }
+
+   .container .footercon {
+       /*width: 871px;*/
+       height: 45px;
+       /*background-color: green;*/
+       /*text-align: center;*/
+       margin: 4rem auto;
+       /*margin-top: 4rem;*/
+       margin-bottom: 0;
+   }
+
+   .container .footercon .footer-nav {
+       float: left;
+       width: 45%;
+       /*background-color: red;*/
+   }
+
+   .container .footercon .footer-nav a {
+       color: #BBC7CC;
+       font-weight: bold;
+       font-size: 14px;
+       margin-left: 15px;
+   }
+
+   .container .footercon .footer-nav span {
+       color: #BBC7CC;
+       /*font-weight: bold;*/
+       font-size: 13px;
+       /*margin-left: 15px;*/
+   }
+
+   .container .footercon .footer-login {
+       float: right;
+       width: 26%;
+       /*background-color: red;*/
+   }
+
+   .container .footercon .footer-login a {
+       color: #BBC7CC;
+       font-weight: bold;
+       font-size: 14px;
+       /*margin-left: 15px;*/
+   }
+
+   .container .footercon .footer-login span {
+       color: #BBC7CC;
+       /*font-weight: bold;*/
+       font-size: 13px;
+       /*margin-left: 15px;*/
+   }
+   /*   文章  结束*/

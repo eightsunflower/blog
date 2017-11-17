@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>five的博客</title>
+    <link rel="icon" href="/assets/images/zuanshi.png">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_441027_kvgnidy36pta9k9.css
+">
+</head>
+
+<body>
+    <!-- <script src="assets/js/jquery.min.js"></script> -->
+    <!-- <script src="assets/js/index.js"></script> -->
+    <div class="header">
+        <div class="headerOne">
+            <a href="" class="header-nav">
+                <img src="/assets/images/zuanshi.png" alt="">
+            </a>
+            <a href="" class="header-login"><i class="iconfont icon-liebiao"></i><span>MENU</span></a>
+        </div>
+        <div class="headerTwo">
+            <p class="header-title">张敬婉的博客</p>
+            <p class="header-list">别着急，慢慢来比较快</p>
+        </div>
+        <a href="">
+            <i class="iconfont icon-zhankai"></i>
+        </a>
+    </div>
+    <div class="fenlei">
+        <% results1.forEach(function(value,key){ %>
+            <span>
+                    <a href="?tid=<%=value.id%>" style="font-size: 23px;color: #333;margin-right: 39px;">
+                        <%=value.typesname%>
+                    </a>
+                </span>
+            <% }) %>
+    </div>
+    <div class="container">
+        <% results.forEach(function(value,key){ %>
+            <div class="post">
+                <div class="article">
+                    <p class="art-title">
+                        <a href="/show/<%=value.id%>">
+                            <%=value.title%>
+                        </a>
+                    </p>
+                    <p class="art-list">
+                        <%=value.content=value.content.slice(0,250)%>
+                            <a href="/show/<%=value.id%>"><i class="iconfont icon-14"></i></a>
+                    </p>
+                    <div class="footer">
+                        <img src="assets/images/zuanshi.png" alt="">
+                        <a href="">
+                            <%=value.author%>
+                        </a>
+                        <time datetime="November 18, 2016">
+                            <%=moment.unix(value.addtime).format('YYYY-MM-DD HH:mm:ss')%>
+                        </time>
+                    </div>
+                </div>
+            </div>
+            <%})%>
+                <div class="pager">
+                    <a href="?p=<%=page.prev%><%=param%>" class="page-prev">← Prev Page</a>
+                    <span class="page-num">Page <%=page.now%> of <%=page.pages%></span>
+                    <a href="?p=<%=page.next%><%=param%>" class="page-next">Next Page →</a>
+                </div>
+                <div class="footercon">
+                    <div class="footer-nav">
+                        <a href="">five的博客</a>
+                        <span>© 2017</span>
+                    </div>
+                    <div class="footer-login">
+                        <span>Proudly published with</span>
+                        <a href="">Bitcron</a>
+                        <span>& Theme</span>
+                        <a href="">Casper</a>
+                    </div>
+                </div>
+    </div>
+</body>
+
+</html>
